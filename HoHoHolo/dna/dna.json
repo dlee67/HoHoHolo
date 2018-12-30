@@ -1,0 +1,47 @@
+{
+  "Version": 1,
+  "UUID": "5148513a-31a2-4466-97e1-b0c2f1b65e34",
+  "Name": "HoHoHolo",
+  "Properties": {
+    "description": "At phase hackathon, using Holochain.",
+    "language": "en"
+  },
+  "PropertiesSchemaFile": "properties_schema.json",
+  "DHTConfig": {
+    "HashType": "sha2-256"
+  },
+  "Zomes": [
+    {
+      "Name": "ElectronTempSensor",
+      "Description": "Commit temperature entries to the Holochain network.",
+      "RibosomeType": "js",
+      "CodeFile": "electrontempsensor.js",
+      "Entries": [
+        {
+          "Name": "temp",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        },
+        {
+          "Name": "tempLinks",
+          "Required": true,
+          "DataFormat": "links",
+          "Sharing": "public"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "commitTemp",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "getTemps",
+          "CallingType": "json",
+          "Exposure": "public"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "Tests": [
+    {
+      "Convey": "auto-generated test for tempCreate",
+      "Zome": "ElectronTempSensor",
+      "FnName": "tempCreate",
+      "Input": "test",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for tempRead",
+      "Zome": "ElectronTempSensor",
+      "FnName": "tempRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for commitTemp",
+      "Zome": "ElectronTempSensor",
+      "FnName": "commitTemp",
+      "Input": "",
+      "Output": "a string"
+    }
+  ]
+}

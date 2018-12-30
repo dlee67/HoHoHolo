@@ -1,0 +1,22 @@
+  {
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "temp"
+  ],
+  "properties": {
+    "temp": {
+      "$id": "#/properties/temp",
+      "type": "string",
+      "title": "The temperature Schema",
+      "default": "",
+      "examples": [
+        "Hash2"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
